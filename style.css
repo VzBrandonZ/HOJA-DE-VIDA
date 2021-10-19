@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    font-family:'Quicksand', sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-size: 100%;
+}
+
+.content {
+    background-color: rgba(168, 211, 203, 0.816);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* STYLE NAME*/
+.profile-name {
+    font-size: 1.8em;
+}
+
+.h2c1 {
+    font-size: 1.3em;
+}
+
+/* STYLE IMAGE*/
+.img-profile {
+    margin-top: 0.5em;
+    width: 14em;
+    border-radius:5px;
+}
+
+.data {
+    font-weight: bold;
+}
+
+/* PROFILE STYLE */
+.content-profile {
+    background-color: #000000;
+    font-size: .9em;
+    text-align: center;
+    color: #FFFF;
+    padding: 2em;
+}
+
+/* STYLE SECTION PROFILE*/
+.content-profile__section {
+    text-align: left;
+    padding: .5em;
+    margin: .8em 0;
+}
+
+/* STYLES LIST OF CONTENT PROFILE */
+.content-profile__section ul {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+/* STYLE CONTENT INFO */ 
+.content-info {
+    padding: 2em;
+}
+
+/* STYLE SECTION INFO*/
+.content-info__section {
+    padding: .5em;
+    margin: 2em 0;   
+}
+
+/* STYLE LIST OF CONTENT INFO*/
+.content-info__section ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* STYLE LIST REFERENCES */
+.content-info__section nav.navigation-reference ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+}
+
+/*! TEMPORAL*/
+.content-info__section nav.navigation-reference ul li{
+    border: 1px solid #000000;
+}
+
+
+/* STYLE SOCIAL*/
+.navigation-social {
+    background-color: #000000;
+    position: relative;
+    margin-right: -3em;
+    
+}
+
+.navigation-social ul{ 
+    display: flex;
+    padding: 0.5em;
+}
+.navigation-social li {
+    margin: .1em;
+    background-color: #ffffff; 
+    padding: 0.2em 0.3em;
+    border-radius: 4px;
+}
+
+.navigation-social a { 
+    color: #000000;
+}
+
+
+
+/* LARGE SCREEN */
+@media (min-width: 700px) {
+    body {
+        padding: 0 4rem;
+    }
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    .content-profile {
+        margin-left: 3em;
+        height: 98%;
+    }
+    .navigation-social {
+        margin-top: 10em;
+    }
+}
+
